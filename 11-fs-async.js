@@ -1,10 +1,9 @@
 const { readFile, writeFile } = require('fs');
 const { isBuffer } = require('util');
 
-// callback hell
-
 console.log('start')
 
+// callback hell
 readFile('./content/first.txt', 'utf8', (err,result)=>{
     if (err) {
         console.log(err)
